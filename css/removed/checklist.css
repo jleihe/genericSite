@@ -1,0 +1,56 @@
+.textbox {
+	margin-bottom: 15px;
+	padding: 15px;
+}
+
+.textbox ul {
+	list-style: none;
+}
+
+.textbox ul li {
+	padding-left: 15px;
+}
+
+
+/*
+ * 
+ * Not compatible with firefox
+ * 
+ * 
+input[type="checkbox"] {-moz-appearance: none;}
+
+input[type="checkbox"]:before {
+	background: url("../images/unchecked.jpg");
+	background-repeat: no-repeat;
+	content:""; 
+	display:inline-block; 
+	width:16px; 
+	height:16px;
+}
+
+input[type="checkbox"]:checked:before {
+	background: url("../images/checked.jpg");
+}
+*/
+
+/*Firefox Compatibility fix*/
+label.checkbox input[type="checkbox"] {
+	display:none;
+}
+
+label.checkbox span {
+	display:inline-block;
+	width:16px;
+	height:16px;
+	
+	background: url("../images/unchecked.jpg");
+	background-repeat: no-repeat;
+	
+	vertical-align:middle;
+	margin:3px;
+}
+
+input[type="checkbox"]:checked + span {
+	background: url("../images/checked.jpg");
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,168 @@
+.textbox {
+	margin-bottom: 15px;
+	padding: 15px;
+	
+	overflow: auto;
+}
+
+.container .textbox {
+	border: 1px solid #D4D5D7;
+	border-radius: 5px;
+}
+
+.container > .textbox {
+	border: 2px solid #D4D5D7;
+	border-radius: 10px;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+}
+
+#user-info {
+}
+
+#error {
+	padding-left: 5;
+	color: #FF0000;
+}
+
+#pic-form {
+	height: 200;
+	width: 200;
+	display: none;
+	
+	background-image: url("../images/logo_grey.jpg");
+	background-size: 100%;
+	
+	border-color: white;
+}
+
+#pic-circle {
+	width: 200;
+	height: 200;
+}
+
+.prof-image:hover #pic-form {
+	display: block;
+}
+
+#profile_pic_box {
+	
+/*
+	border:#999 2px solid; 
+*/
+
+	overflow:hidden;
+	
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	border-color: white;
+}
+
+#profile_pic_box img {
+/*
+	z-index:2000; 
+*/
+	width:200px;
+	height:200px;
+}
+
+#profile_pic_box > form{
+	display:none;
+	position:absolute; 
+/*
+	z-index:3000;
+*/
+	padding:10px;
+	opacity:.8;
+	background:#F0FEC2;
+	width:180px;
+	height:180px;
+	
+	opacity: 0;
+}
+
+#pic-circle:hover #pic-form {
+	color: black;
+
+	display: block;/*make the upload form appear*/
+	
+	padding-top: 40;
+	padding-bottom: 50;
+	padding-left: 10;
+	
+	border: 2px solid #456879;
+	border-radius: 200px;
+	
+	opacity: 0.9;
+}
+
+#pic-circle:hover img {
+	display: none;
+}
+
+#user-info {
+	
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	border-color: white;
+}
+
+#site {
+	
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#social {
+	
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+#bio {
+	
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	overflow: hidden;
+	
+}
+
+#twitter {
+	
+	width: 520px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	overflow: hidden;
+	
+	border-color: white;
+}
+
+#right-side {
+/*
+	background-color: red;
+*/
+	
+	width:80%;
+	float: right;
+	clear: right;
+}
+
+#left-side {
+/*
+	background-color: green;
+*/
+	width:300px;
+	float: left;
+}

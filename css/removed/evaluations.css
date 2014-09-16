@@ -1,0 +1,45 @@
+.textbox {
+	padding: 15px;
+	margin-bottom: 15px;
+	padding-top: 50;
+	overflow: auto;
+}
+
+.textbox a img {
+	padding-top: 30;
+	padding-left: 30;
+}
+
+#intro {
+	clear: both;
+}
+
+#mid {
+	float: left;
+}
+
+#final {
+	float: right;
+}
+
+#midtermpic {
+	background-image: url("../images/midtermSurvey.jpg");
+	display:block;
+	height:200;
+	width:200;
+}
+
+#midtermpic:hover {
+	background-image: url("../images/midtermSurvey-clicked.jpg");
+}
+
+#finalpic {
+	background-image: url("../images/finalSurvey.jpg");
+	display:block;
+	width: 200;
+	height: 200;
+}
+
+#finalpic:hover {
+	background-image: url("../images/finalSurvey-clicked.jpg");
+}

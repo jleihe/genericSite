@@ -1,0 +1,28 @@
+.textbox {
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+#lists ul {
+	width: 30em;
+}  /* float & allow room for the widest item */
+#lists ul li {
+	float: left;
+	width: 10em;
+}  /* stop the float */
+#lists br {
+	clear: left;
+}  /* separate the list from subsequent markup */
+#lists div.lists {
+	margin-bottom: 1em;
+}
+
+.lists span {
+/*
+	margin-left: 20;
+*/
+	text-align: justify
+/*
+	margin-right: auto;
+*/
+}

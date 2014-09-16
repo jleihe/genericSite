@@ -1,0 +1,571 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ac-custom {
+	padding: 0 3em;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.ac-custom h2 {
+	font-size: 2em;
+	font-weight: 300;
+	padding: 0 0 ;
+	margin: 0 0 ;
+}
+
+.ac-custom ul,
+.ac-custom ol {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+.ac-custom li {
+	margin: 0 auto;
+	padding: 2em 0;
+	position: relative;
+}
+
+.ac-custom label {
+	display: inline-block;
+	position: relative;
+	font-size: 2em;
+	padding: 0 0 0 80px;
+	vertical-align: top;
+	color: black;
+	cursor: pointer;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.ac-custom input[type="checkbox"],
+.ac-custom input[type="radio"],
+.ac-custom label::before {
+	width: 50px;
+	height: 50px;
+	top: 50%;
+	left: 0;
+	margin-top: -25px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.ac-custom input[type="checkbox"],
+.ac-custom input[type="radio"] {
+	opacity: 0;
+	-webkit-appearance: none;
+	display: inline-block;
+	vertical-align: middle;
+	z-index: 100;
+}
+
+.ac-custom label::before {
+	content: '';
+	border: 4px solid #fff;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.ac-radio label::before {
+	border-radius: 50%;
+}
+
+.ac-custom input[type="checkbox"]:checked + label,
+.ac-custom input[type="radio"]:checked + label {
+	color: black;
+} 
+
+.ac-custom input[type="checkbox"]:checked + label::before,
+.ac-custom input[type="radio"]:checked + label::before {
+	opacity: 0.8;
+}
+
+/* General SVG and path styles */
+
+.ac-custom svg {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	margin-top: -20px;
+	left: 5px;
+	pointer-events: none;
+}
+
+.ac-custom svg path {
+	stroke: grey;
+	stroke-width: 13px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	fill: none;
+}
+
+/* Specific input, SVG and path styles */
+
+/* Circle */
+.ac-circle input[type="checkbox"],
+.ac-circle input[type="radio"],
+.ac-circle label::before {
+	width: 30px;
+	height: 30px;
+	margin-top: -15px;
+	left: 10px;
+	position: absolute;
+}
+
+.ac-circle label::before {
+	background-color: #fff;
+	border: none;
+}
+
+.ac-circle svg {
+	width: 70px;
+	height: 70px;
+	margin-top: -35px;
+	left: -10px;
+}
+
+.ac-circle svg path {
+	stroke-width: 5px;
+} 
+
+/* Box Fill */
+.ac-boxfill svg path {
+	stroke-width: 8px;
+} 
+
+/* Swirl */
+.ac-swirl svg path {
+	stroke-width: 8px;
+}
+
+.ac-checkmark ol li {
+	font-size: 20px;
+	padding: 1em 1em 0 2em;
+	text-indent: -40px;     
+}
+
+.ac-checkmark ol li label {
+	font-size: 1em;
+	text-indent: 0;
+	padding-left: 30px; 
+}
+
+/* List */
+.ac-list ol {
+	list-style: decimal;
+	list-style-position: inside;
+}
+
+.ac-list ol li {
+	font-size: 20px;
+	padding: 1em 1em 0 2em;
+	text-indent: -40px;
+}
+
+.ac-list ol li label {
+	font-size: 1em;
+	text-indent: 0;
+	padding-left: 30px;
+}
+
+.ac-list label::before {
+	display: none;
+}
+
+.ac-list svg {
+	width: 100%;
+	height: 80px;
+	left: 0;
+	top: 1.2em;
+	margin-top: 0px;
+}
+
+.ac-list svg path {
+	stroke-width: 4px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 50em) {
+	section {
+		font-size: 80%;
+	}
+}
+
+/**************************************\  
+|*                                    *|
+|* THIS IS REFERENCED BY THE TIMELINE *|
+|*                                    *|
+\**************************************/
+
+@font-face {
+	font-family: 'ecoico';
+	src:url('../fonts/timelineicons/ecoico.eot');
+	src:url('../fonts/timelineicons/ecoico.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/timelineicons/ecoico.woff') format('woff'),
+		url('../fonts/timelineicons/ecoico.ttf') format('truetype'),
+		url('../fonts/timelineicons/ecoico.svg#ecoico') format('svg');
+	font-weight: normal;
+	font-style: normal;
+} /* Made with http://icomoon.io/ */
+
+.cbp_tmtimeline {
+	margin: 30px 0 0 0;
+	padding-left: 25px;
+	list-style: none;
+	position: relative;
+        width: 475px;
+} 
+
+/* The line */
+.cbp_tmtimeline:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 10px;
+	background: #C9B091;
+	left: 25%;
+	margin-left: -10px;
+}
+
+/* The date/time */
+.cbp_tmtimeline > li .cbp_tmtime {
+	display: block;
+	width: 25%;
+	padding-right: 100px;
+	position: absolute;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span {
+	display: block;
+	text-align: right;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span:first-child {
+	font-size: 0.9em;
+	color: #bdd0db;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span:last-child {
+	font-size: 1.2em;
+	color: #523F2E;
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
+	color: #7A5A3C;
+}
+
+/* Right content */
+.cbp_tmtimeline > li .cbp_tmlabel {
+	margin: 0 0 15px 25%;
+	background: #523F2E;
+	color: #fff;
+	padding: 0.5em;
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 1.4;
+	position: relative;
+	border-radius: 5px;
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
+	background: #7A5A3C;
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel h2 { 
+	margin-top: 0px;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+/* The triangle */
+.cbp_tmtimeline > li .cbp_tmlabel:after {
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: #523F2E;
+	border-width: 10px;
+	top: 10px;
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+	border-right-color: #7A5A3C;
+}
+
+/* The icons */
+.cbp_tmtimeline > li .cbp_tmicon {
+	width: 40px;
+	height: 40px;
+	font-family: 'ecoico';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	font-size: 1.4em;
+	line-height: 40px;
+	-webkit-font-smoothing: antialiased;
+	position: absolute;
+	color: #fff;
+	background: #46a4da;
+	border-radius: 50%;
+	box-shadow: 0 0 0 8px #afdcf8;
+	text-align: center;
+	left: 20%;
+	top: 0;
+	margin: 0 0 0 -25px;
+}
+
+.cbp_tmicon-phone:before {
+	content: "\e000";
+}
+
+.cbp_tmicon-screen:before {
+	content: "\e001";
+}
+
+.cbp_tmicon-mail:before {
+	content: "\e002";
+}
+
+.cbp_tmicon-earth:before {
+	content: "\e003";
+}
+
+/* Example Media Queries */
+@media screen and (max-width: 65.375em) {
+
+	.cbp_tmtimeline > li .cbp_tmtime span:last-child {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 47.2em) {
+	.cbp_tmtimeline:before {
+		display: none;
+	}
+
+	.cbp_tmtimeline > li .cbp_tmtime {
+		width: 100%;
+		position: relative;
+		padding: 0 0 20px 0;
+	}
+
+	.cbp_tmtimeline > li .cbp_tmtime span {
+		text-align: left;
+	}
+
+	.cbp_tmtimeline > li .cbp_tmlabel {
+		margin: 0 0 30px 0;
+		padding: 1em;
+		font-weight: 400;
+		font-size: 95%;
+	}
+
+	.cbp_tmtimeline > li .cbp_tmlabel:after {
+		right: auto;
+		left: 20px;
+		border-right-color: transparent;
+		border-bottom-color: #3594cb;
+		top: -20px;
+	}
+
+	.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+		border-right-color: transparent;
+		border-bottom-color: #6cbfee;
+	}
+
+	.cbp_tmtimeline > li .cbp_tmicon {
+		position: relative;
+		float: right;
+		left: auto;
+		margin: -55px 5px 0 0px;
+	}	
+}
+
+
+/**************************************\  
+|*                                    *|
+|* THIS IS REFERENCED BY THE MENU     *|
+|*                                    *|
+\**************************************/
+
+
+/* General styles for all menus */
+.cbp-spmenu {
+	background: #E6E6E6;
+	position: fixed;
+}
+
+.cbp-spmenu h3 {
+	color: #afdefa;
+	font-size: 1.9em;
+	padding: 20px;
+	margin: 0;
+	font-weight: 300;
+	background: #0d77b6;
+}
+
+.cbp-spmenu a {
+	display: block;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 300;
+}
+
+.cbp-spmenu a:hover {
+	background: #258ecd;
+}
+
+.cbp-spmenu a:active {
+	background: #afdefa;
+	color: #47a3da;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 500px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.cbp-spmenu-vertical a {
+	border-bottom: 1px solid #258ecd;
+	padding: 1em;
+}
+
+.cbp-spmenu-horizontal {
+	width: 100%;
+	height: 150px;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.cbp-spmenu-horizontal h3 {
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
+.cbp-spmenu-horizontal a {
+	float: left;
+	width: 20%;
+	padding: 0.8em;
+	border-left: 1px solid #258ecd;
+}
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: -500px;
+}
+
+.cbp-spmenu-right {
+	right: -240px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+	left: 0px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
+
+/* Horizontal menu that slides from the top or bottom */
+
+.cbp-spmenu-top {
+	top: -150px;
+}
+
+.cbp-spmenu-bottom {
+	bottom: -150px;
+}
+
+.cbp-spmenu-top.cbp-spmenu-open {
+	top: 0px;
+}
+
+.cbp-spmenu-bottom.cbp-spmenu-open {
+	bottom: 0px;
+}
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.cbp-spmenu-push-toright {
+	left: 240px;
+}
+
+.cbp-spmenu-push-toleft {
+	left: -240px;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* Example media queries */
+
+@media screen and (max-width: 55.1875em){
+
+	.cbp-spmenu-horizontal {
+		font-size: 75%;
+		height: 110px;
+	}
+
+	.cbp-spmenu-top {
+		top: -110px;
+	}
+
+	.cbp-spmenu-bottom {
+		bottom: -110px;
+	}
+
+}
+
+@media screen and (max-height: 26.375em){
+
+	.cbp-spmenu-vertical {
+		font-size: 90%;
+		width: 500px;
+	}
+
+	.cbp-spmenu-left,
+	.cbp-spmenu-push-toleft {
+		left: -190px;
+	}
+
+	.cbp-spmenu-right {
+		right: -190px;
+	}
+
+	.cbp-spmenu-push-toright {
+		left: 500px;
+	}
+}

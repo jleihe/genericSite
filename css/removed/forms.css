@@ -1,0 +1,18 @@
+.textbox {
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+
+table, th, td
+{
+    border-collapse: collapse;
+    border:1px solid black;
+}
+th, td
+{
+    padding:5px;
+}
+#flight{
+    padding: 10px;
+}

@@ -1,0 +1,45 @@
+#header {
+	color: white;
+	background-color:#301E12;
+	
+	margin: 0;
+	padding: 0;
+	
+	height: 70px;
+	width: 100%;
+	min-width: 900px;
+}
+
+/*
+#header #content {
+	width: 900px;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+*/
+
+#header img {
+	float: left;
+	margin: 5;
+}
+
+#header h3 {
+	float: left;
+}
+
+#background {
+	background-color:#301E12;
+	
+	margin: 0;
+	padding: 0;
+
+	position: absolute;
+	top: 0;
+	left: 0; 
+	right: 0;
+	
+	height: 70;
+	
+	z-index: -1;
+}
